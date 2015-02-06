@@ -1,6 +1,3 @@
-Cindy algorithm practices
-
-
--
+Cindy algorithm practices...
 
 
