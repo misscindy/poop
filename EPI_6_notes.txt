@@ -1,0 +1,7 @@
+Array 
+
+	Continguous block of memory 
+	Fixed size 
+	Quick access 
+	Worst case O(n) -> inserting into full array 
+
