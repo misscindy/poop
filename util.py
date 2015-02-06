@@ -60,6 +60,20 @@ def printLinkedList(linked_list):
     print ' -> '.join(vs)
 
 
+def isSameLinkedList(linked_list1, linked_list2):
+    """
+        Check whether two linked lists are the same.
+        Args:
+            linked_list1: -
+            linked_list2: -
+    """
+    while linked_list1:
+        if linked_list1.val != linked_list2.val:
+            return False
+        linked_list1, linked_list2 = linked_list1.next, linked_list2.next
+    return True
+
+
 def createBinaryTree(vs):
     """
         Generate a binary tree based on the given array.
