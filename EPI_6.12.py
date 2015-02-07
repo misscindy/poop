@@ -15,7 +15,7 @@ def enum_prime_bf(n):
 				break
 		if prime: print i,
 	print   
-
+	
 
 def enum_prime_bf(n):
 	def check(i):
