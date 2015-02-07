@@ -6,6 +6,9 @@ class ListNode:
         self.val = x
         self.next = next
 
+    def __repr__(self):
+        return "Node(%i)" % self.val 
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -13,7 +16,7 @@ class TreeNode:
         self.right = None
         self.parent = None
     def __repr__(self):
-        return "Node: %i "%self.val 
+        return "Node: %i " % self.val 
 
 
 def createLinkedList(vs, rand=False, uni=False, size=10):
