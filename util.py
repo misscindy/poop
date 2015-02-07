@@ -5,6 +5,8 @@ class ListNode:
     def __init__(self, x, next = None):
         self.val = x
         self.next = next
+    def __repr__(self):
+        return "Node: %i" %self.val 
 
 class TreeNode:
     def __init__(self, x):
