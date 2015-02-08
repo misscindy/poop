@@ -17,11 +17,20 @@ def isPalindrome(head):
 			return None, None, False
 	return _isP(head, head, head.next)
 
+########
+
+# Reverse the first half of the linked list
+# use fast and slow runner 
+
+
+#########
+
+
 if __name__ == '__main__':
 	
 	values = [1]
 	ll = createLinkedList(values)
-	ll = createLinkedList(values, uni=True, size=5)
+	ll = createLinkedjList(values, uni=True, size=5)
 	printLinkedList(ll)
 	head = isPalindrome(ll)
 	print head
