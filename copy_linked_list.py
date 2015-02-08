@@ -19,10 +19,17 @@ def copy_linkedlist(head):
         runner = runner.next
     return dummy.next
 
+def copy_poop(head):
+    dummy = ListNode(0)
+    runner = dummy
+    while head:
+        runner.next = ListNode(head.val)
+        head, runner = head.next, runner.next 
+    return dummy.next 
 
 
 if __name__ == '__main__':
-    values = [1, 2, 3, 4]
+    values = []
     # linked_list = copy(createLinkedList(values))  # 1 -> 1 -> 2 -> 2 -> 3 -> 3 -> 4 -> 4
-    linked_list = copy_linkedlist(createLinkedList(values))  # 1 -> 2 -> 3 -> 4
+    linked_list = copy_poop(createLinkedList(values))  # 1 -> 2 -> 3 -> 4
     printLinkedList(linked_list)
