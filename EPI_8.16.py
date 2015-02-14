@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
 	print find_median(head.next.next)
 
-
+w
 
 
 

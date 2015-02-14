@@ -46,7 +46,7 @@ if __name__ == '__main__':
         print isSameLinkedList(head, l2)
 
 	# values = [1, 3, 5, 7, 9]
-	# ll = createLinkedList(values)
+	# ll = createLinke dList(values)
 	# ll = createLinkedList(values, rand=True, uni=True, size=5)
 	# printLinkedList(ll)
 	# head = reverseBetween(ll, 2,4)
