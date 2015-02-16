@@ -25,6 +25,8 @@ def zip(linked_list):
     return linked_list
 
 
+<<<<<<< HEAD
+=======
 def zip2(linked_list):
     slow_runner, fast_runner, i = linked_list, linked_list, 0
     while fast_runner.next and fast_runner.next.next:
@@ -48,6 +50,7 @@ def zip2(linked_list):
         runner = runner_next
     runner.next = None
     return head
+>>>>>>> 1c603aaf5f7afa88b0d887ce61681b5685fb40e1
 
 
 if __name__ == '__main__':
