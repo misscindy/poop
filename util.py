@@ -1,15 +1,18 @@
 import random
 import math
 
+
 class ListNode:
-    def __init__(self, x, next = None):
+    def __init__(self, x, next=None):
         self.val = x
         self.next = next
-    def __repr__(self):
-        return "Node: %i" %self.val 
 
     def __repr__(self):
-        return "Node(%i)" % self.val 
+        return "Node: %i" % self.val
+
+    def __repr__(self):
+        return "Node(%i)" % self.val
+
 
 class TreeNode:
     def __init__(self, x):
@@ -17,8 +20,9 @@ class TreeNode:
         self.left = None
         self.right = None
         self.parent = None
+
     def __repr__(self):
-        return "Node: %i " % self.val 
+        return "Node: %i " % self.val
 
 
 def createLinkedList(vs, rand=False, uni=False, size=10):
@@ -95,6 +99,7 @@ def createBinaryTree(vs):
              / \  / \
             3  # 4   #
     """
+
     def _helper(node, vs, index):
         left = index * 2 + 1
         right = left + 1
@@ -177,7 +182,7 @@ def createBinarySearchTreeNotBalanced(vs):
                  /
                 4
     """
-    if not vs: 
+    if not vs:
         return None
     root = TreeNode(vs[0])
     for v in vs[1:]:
@@ -215,6 +220,7 @@ def createCompleteBinarySearchTree(vs):
              / \
             1   3 
     """
+
     def _getRootIndex(left, right):
         left, right = left + 1, right + 1
         n = right - left + 1
@@ -259,6 +265,7 @@ def printBinarySearchTree(root):
         else:
             print root.val
         _print(root.left, level + 1)
+
     _print(root, 0)
 
 
