@@ -10,13 +10,13 @@ def copy(head):
         head = head_next
     return h
 
+
 def copy_linkedlist(head):
     dummy = ListNode(0)
     runner = dummy
     while head:
         runner.next = ListNode(head.val)
-        head = head.next
-        runner = runner.next
+        head, runner = head.next, runner.next
     return dummy.next
 
 def copy_poop(head):
@@ -26,7 +26,6 @@ def copy_poop(head):
         runner.next = ListNode(head.val)
         head, runner = head.next, runner.next 
     return dummy.next 
-
 
 if __name__ == '__main__':
     values = []
