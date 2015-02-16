@@ -2,6 +2,7 @@
 # k-increasing array
 # O(n) running time
 # Aux heap for sort
+from EPI_11_01 import *
 UP, DOWN = True, False
 
 
@@ -22,13 +23,13 @@ def sort_k_up_down_array(array):
                 ls_arrays.append(array[i - 1: prev - 1:-1])
             Dir = not Dir
             prev = i
-            text = "Increasing" if Dir else "Decreasing"
-            print text, i, Dir
-
-    return ls_arrays
+    return merge_sort(ls_arrays)
 
 
 # merge k sorted array
-
 if __name__ == '__main__':
-    print sort_k_up_down_array([1, 2, 3, 0, 4, 5, 6, 3, 1])
+    input = [1, 2, 3, 0, 4, 5, 6, 3, 1]
+    output = sorted(input)
+
+    print sort_k_up_down_array(input) == output
+
