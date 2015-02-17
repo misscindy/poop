@@ -50,7 +50,7 @@ class Heap:
 
         while 2 * k <= self.size:
             j = 2 * k
-            if j < self.size and self.compare(j, j+1):
+            if j < self.size and self.compare(j, j + 1):
                 j += 1
                 # pick the greater child if max heap
                 # pick the lesser child if min heap
@@ -61,8 +61,8 @@ class Heap:
             k = j
 
     def swim(self, k):
-        while k > 1 and self.compare(k/2, k):
-            self.nodes[k], self.nodes[k/2] = self.nodes[k/2], self.nodes[k]
+        while k > 1 and self.compare(k / 2, k):
+            self.nodes[k], self.nodes[k / 2] = self.nodes[k / 2], self.nodes[k]
             k /= 2
 
     def insert(self, x):
@@ -80,12 +80,11 @@ class Heap:
         return self.nodes.pop()
 
     def _build_heap(self):
-        for i in xrange(self.size/2, 0, -1):
+        for i in xrange(self.size / 2, 0, -1):
             self.sink(i)
 
     def __repr__(self):
         return "%s" % self.nodes
-
 
 
 if __name__ == '__main__':
