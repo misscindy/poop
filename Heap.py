@@ -30,6 +30,15 @@ class Heap:
             self.nodes = ls
             self._build_heap()
 
+    def top(self):
+        return self.nodes[1] if not self.is_empty() else None
+
+    def nth(self, k):
+        return self.nodes[k]
+
+    def _size(self):
+        return self.size
+
     def is_empty(self):
         return self.size == 0
 
