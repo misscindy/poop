@@ -3,21 +3,19 @@
 # Muye Wang
 # returns the number of occurrences of a target number in a sorted array.
 
-'''
-test_cases = [
- 		(([0,1,1,1,2,2,3], 1), 3),
- 		(([0,1,1,1,2,2,3], 2), 2),
 
- 	]
-
-result
-	3 == 3
-	2 == 2
-
-'''
+# test_cases = [
+# (([0, 1, 1, 1, 2, 2, 3], 1), 3),
+#     (([0, 1, 1, 1, 2, 2, 3], 2), 2),
+#
+# ]
+#
+# result
+# 3 == 3
+# 2 == 2
 
 
-def target_occurrence(array, target):s
+def target_occurrence(array, target):
     target_index = _binary_search(array, 0, len(array) - 1, target)
     if target_index == -1:
         print "not found"
@@ -77,8 +75,8 @@ def _binary_search(array, lo, high, target):
 
 # if __name__ == '__main__':
 #
-#     test_cases = [
-#         (([0, 1, 1, 1, 2, 2, 3], 1), 3),
+# test_cases = [
+# (([0, 1, 1, 1, 2, 2, 3], 1), 3),
 #         (([0, 1, 1, 1, 2, 2, 3], 2), 2),
 #
 #     ]
@@ -88,8 +86,6 @@ def _binary_search(array, lo, high, target):
 #
 #
 #
-
-
 
 
 def binary_search(array, k):
@@ -113,6 +109,3 @@ def binary_search(array, k):
 
 if __name__ == "__main__":
     print binary_search([1, 2, 2, 2, 3, 3, 4, 5, 7], 10000)
-
-
-
