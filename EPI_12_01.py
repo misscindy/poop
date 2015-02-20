@@ -1,5 +1,5 @@
-# Search for the first occurrence of k
-# Search for the last occurrence of k
+# Version 1: Search for the first occurrence of k
+# Version 2: Search for the last occurrence of k
 
 
 def binary_search(array, k, last=False):
