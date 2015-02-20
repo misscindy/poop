@@ -50,6 +50,8 @@ def b_search(array, k, last=False):
     return result
 
 
+
+
 if __name__ == "__main__":
     print binary_search([1, 2, 2, 2, 3, 3, 4, 5, 7], 2, True)
     print b_search([1, 2, 2, 2, 3, 3, 4, 5, 7], 2, True)
