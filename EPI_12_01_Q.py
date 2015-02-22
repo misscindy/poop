@@ -74,6 +74,35 @@ def binary_search(array, k):
     return -1
 
 
+#########################
+# Question 3
+# 
+# 
+#########################
+def b_s(array):
+    def locate(array, x):
+        try:
+            array[x]
+        except:
+            return None
+        return x if x != 0 else 1
+
+    lo, high = 0, 1
+    while lo <= high:
+        mid = (lo + high) >> 1
+        if locate(array, mid):
+            if not locate(array, mid + 1):
+                return mid + 1
+            else:
+                high <<= 1
+                lo = mid + 1
+        else:
+            high = mid - 1 
+    return "wtf"
+
+
+
+
 if __name__ == "__main__":
     # For Question 1
     test_cases = [
@@ -87,5 +116,13 @@ if __name__ == "__main__":
     ]
     for test_case, expected in test_cases:
         print target_occurrence(test_case[0], test_case[1]) == expected
-    
+
+    # 
+    test_cases = [
+        [1] * 17,
+        [2] * 10,
+    ]
+    for test_case in test_cases:
+        print b_s(test_case), len(test_case)
+
 
